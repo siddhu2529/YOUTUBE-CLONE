@@ -12,8 +12,9 @@
 
 <body style="background-color: #282828;">
     <div class="header">
-        <div class="material-icons">
-            menu
+        <div class="sidenav">
+            <span style="cursor:pointer" onclick="navopen()">&#9776;</span>
+
         </div>
         <div class="yt">
             <img src="https://www.logo.wine/a/logo/YouTube/YouTube-White-Full-Color-Dark-Background-Logo.wine.svg"
@@ -22,7 +23,7 @@
         <div class="search-bar">
             <input type="text" placeholder="search">
             <span class="material-icons">search</span>
-            <span class="material-icons"></span>
+            <span class="material-icons">mic</span>
         </div>
 
         <div class="icons">
@@ -35,131 +36,152 @@
                     alt="Your Channel" />
             </a>
         </div>
-
-
-
     </div>
-  <!--
-    <div class="wrapper">
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
-            </div>
-        
-
-            <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
-                        class="dropdown-toggle">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                </li>
-            </ul>
-        </nav>
-        <div id="content">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                        </ul>
+    <div>
+        <hr>
+        <div class="tag-line">
+            <button>all</button>
+            <button>JavaScript</button>
+            <button>c++</button>
+            <button>tamil cinema</button>
+            <button>music</button>
+            <button>comedy</button>
+            <button>A.R.Rahman</button>
+            <button>U1</button>
+            <button>Filmi</button>
+        </div>
+    </div>
+    <div id="mySidenav" class="side-bar">
+        <span style="cursor:pointer" onclick="navclose()">&#9776;</span>
+        <a href="#">Home</a>
+        <a href="#">Explore</a>
+        <a href="#">Shorts</a>
+        <a href="#">Subscriptions</a>
+        <a href="#">Library</a>
+        <a href="#">History</a>
+        <a href="#">Your Videos</a>
+        <a href="#">Watch Later</a>
+        <a href="#">Liked videos</a>
+    </div>
+    <div class="side-bar-col">
+        <div class="recents" style="display: flex;">
+            <h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 100; color: aliceblue;">Recents</h3>
+            <span class="material-icons">history</span>
+      </div>
+      <div>
+          <img src="https://i.ytimg.com/vi/sC2nElyx7Ds/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBD_ZyHaNedxcep7V0vCNwPuegTZA" alt="">
+        </div>
+        <div>
+            <img src="https://i.ytimg.com/vi/Qipxma3OWpc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBPc7Uhf9f7zb4zH7yqzx10oabM1Q" alt="">
+        </div>
+        <div>
+            <img src="https://i.ytimg.com/vi/jJf35tEkW9E/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC02TNa2UgrdfXs0OnFvn9AYsYpDQ" alt="">
+        </div>
+        <div>
+            <img src="https://i.ytimg.com/vi/o22d6IcEAFE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAAWG2K0Jp3sh8UqHEBU5CBTPVOBw" alt="">
+        </div>
+        <div>
+            <img src="https://i.ytimg.com/vi/0SDoUOBCAAI/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA_IKRP1I62VfLGhaLnQi0GilQFfw" alt="">
+        </div>
+    </div>
+    <section>
+        <div class="body-yt">
+            <div class="row-1">
+                <div class="card1">
+                    <img
+                        src="https://i.ytimg.com/vi/w7Fjxf62t8E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBgRx5RHvKkTXa3-kmpIFTLZx1xYw">
+                    <div class="card-body">
+                        <h5>Don-Bae Music Video</h5>
+                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">18M
+                            views 1 month ago </p>
+                        <a href="#" style="color: aliceblue;margin-top: -10px;">view more</a>
                     </div>
                 </div>
-            </nav>
-        -->
+                <div class="card2" style="width: 18rem;">
+                    <img src="https://i.ytimg.com/vi/8zKuNo4ay8E/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA3H5Z79o1dIpMm215mAgGUSdE1WA"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Asynchronous JavaScript & EVENT LOOP from scratch 🔥</h5>
+                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">278K
+                            views 1 year ago</p>
+                        <a href="#" style="color: aliceblue; margin-top: -10px;">view more</a>
+                    </div>
+                </div>
+                <div class="card3" style="width: 18rem;">
+                    <img src="https://i.ytimg.com/vi/jJeAnV-41VM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDvJxcu-YuABFdHGP7jEbBuaxpcyg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Eruma Sani-Technology love</h5>
+                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">278K
+                            views 1 year ago</p>
+                        <a href="#" style="color: aliceblue;">view more</a>
+                    </div>
+                </div>
+                <div class="card4" style="width: 18rem;">
+                    <img src="https://i.ytimg.com/vi/m9EX0f6V11Y/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBy6AGX1veF5RectgriXDqgJ1QHXw"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Marvel Studios’ Ms. Marvel | Official Hindi Trailer | DisneyPlus Hotstar</h5>
+                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">47K
+                            views 1 hour ago</p>
+                        <a href="#" style="color: aliceblue;">view more</a>
+                    </div>
+                </div>
+                <div class="card5" style="width: 18rem;">
+                    <img src="https://i.ytimg.com/vi/nccyIm4NpAM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCpmgA2ySavs--d5aTYCN92sqyW5w"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Remove All Negative Energy | Tibetan Healing Sounds </h5>
+                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">1.5M
+                            views 1 month ago</p>
+                        <a href="#" style="color: aliceblue;">view more</a>
+                    </div>
+                </div>
+                <div class="card6" style="width: 18rem;">
+                    <img
+                        src="https://i.ytimg.com/vi/Vs-EYzXAmMY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAoJy2MD4-Uf-5TYt3PvuEVtCL_-Q">
+                    <div class="card-body">
+                        <h5>Sarpatta Kabilan vs. Dancing Rose | Best Fight Scene </h5>
+                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                            270k
+                            views 1 month ago</p>
+                        <a href="#" style="color: aliceblue;">view more</a>
+                    </div>
+                </div>
+                <div class="card7" style="width: 18rem;">
+                    <img
+                        src="https://i.ytimg.com/vi/bUxd3jqCr94/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDta3HKPV5cnQOLyUIyVGU2P-VZkg">
+                    <div class="card-body">
+                        <h5>Mr.Bean | The Animated Series.. </h5>
+                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                            24M
+                            views 7 month ago</p>
+                        <a href="#" style="color: aliceblue;">view more</a>
+                    </div>
+                </div>
+                <div class="card8" style="width: 18rem;">
+                    <img
+                        src="https://i.ytimg.com/vi/xNOLTvKYhyY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDedB8HKywERTrKKyRJdg-4K4RbSw">
+                    <div class="card-body">
+                        <h5> Ola S1 Pro vs Ather 450X - India's most desirable electric scooters compared | Autocar India </h5>
+                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                            3.5M
+                            views 1 month ago</p>
+                        <a href="#" style="color: aliceblue;">view more</a>
+                    </div>
+                </div>
 
 
 
 
+            </div>
 
+        </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <script src="index.js"> </script>
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"> </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

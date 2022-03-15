@@ -1,8 +1,7 @@
-/*
-$(document).ready(function () {
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
-    });
-});
-*/
+function navopen(){
+    document.getElementById("mySidenav").style.width = "250px";
+}
 
+function navclose(){
+    document.getElementById("mySidenav").style.width = "0";
+}
